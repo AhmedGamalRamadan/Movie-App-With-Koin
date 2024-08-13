@@ -23,7 +23,6 @@ Technologies Used :
 
 
 ## Screens
-
 * **Home Screen:** Displays a paginated list of movies fetched from a remote API.
 
 
@@ -33,7 +32,6 @@ Technologies Used :
 * **The ViewModel handles the business logic and interacts with the repository to fetch the data.**
 * **Koin is used to inject dependencies, ensuring that components are easily testable and modular.**
 * **Paging is used to load movies in chunks, improving performance and user experience.**
-
 
 ## Installation
 1. **Clone the Repository**: Clone this repository to your local machine.
@@ -54,7 +52,6 @@ Technologies Used :
        <td><img src="https://github.com/user-attachments/assets/60a8ad24-167e-49f7-88d5-0273042a9919" alt="splash" width="230"></td>
   </tr>
 </table>
-
 
 
 ## Connect with Me 🌐
