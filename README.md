@@ -4,8 +4,7 @@
 This is a practice Android application built using Jetpack Compose for UI, Koin for dependency injection, and Paging for efficient data loading. The app is designed to display a list of movies on a single home screen.
 
 
-Technologies Used :
---------------  
+## Technologies Used :
 * **Jetpack Compose:** The app leverages *Jetpack Compose*, a modern Android UI toolkit, to create a seamless and interactive user experience.
 * **Kotlin:** Developed entirely in *Kotlin*, the codebase benefits from the conciseness and expressiveness of the language, promoting efficient and readable code.
 * **Clean Architecture**: The project implements the principles of clean architecture to separate the business, presentation, and data layers. This enables easier testing and flexibility in swapping out layer implementations.
