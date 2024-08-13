@@ -18,9 +18,13 @@ Technologies Used :
 * **Paging** For handling large datasets efficiently.
 
 
+## Architecture block diagram
+![Android Architecture](https://github.com/lofcoding/AndroidArchitectureSample/assets/109604722/ed29d956-1154-4518-9107-e4e1a34b4a35)
+
+
 ## Screens
 
-**Home Screen:** Displays a paginated list of movies fetched from a remote API.
+* **Home Screen:** Displays a paginated list of movies fetched from a remote API.
 
 
 ## How It Works
