@@ -4,5 +4,5 @@ import com.appssquare.ag.moviesjcompose.model.MovieResponse
 
 interface MovieRepository {
 
-    suspend fun getMoviesList(): MovieResponse
+    suspend fun getMoviesList(page :Int): MovieResponse
 }

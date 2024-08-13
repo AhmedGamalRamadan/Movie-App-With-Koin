@@ -16,20 +16,28 @@ class MainViewModel(
     init {
         getMovies()
     }
-    private  val _movieListStat = MutableStateFlow<List<Movie>>(emptyList())
 
-    val movieListStat =_movieListStat.asStateFlow()
+    private val _movieState = MutableStateFlow<List<Movie>>(emptyList())
+    val movieState = _movieState.asStateFlow()
 
-    private fun getMovies(){
+    private var pageNumber: Int = 1
+
+    fun getMovies() {
+        if (pageNumber == 0) pageNumber = 1 // Ensuring it never starts at 0
+
         viewModelScope.launch {
             try {
-                val result =movieRepository.getMoviesList()
-                _movieListStat.value =result.results
+                Log.d("MainViewModel", "Requesting movies for page: $pageNumber")
+                val result = movieRepository.getMoviesList(page = pageNumber).results
 
-            }catch (e:Exception){
-                Log.d("MainViewModel",e.message.toString())
+                val movies = if (pageNumber == 1) result else _movieState.value + result
+
+                _movieState.value = movies
+                pageNumber++
+
+            } catch (e: Exception) {
+                Log.d("MainViewModel", e.message.toString())
             }
-
         }
     }
 }

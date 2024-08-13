@@ -7,7 +7,7 @@ class MovieRepositoryImp(
     private val movieApi: MovieApi
 ) : MovieRepository {
 
-    override suspend fun getMoviesList()=
-        movieApi.getMoviesList()
+    override suspend fun getMoviesList(page:Int)=
+        movieApi.getMoviesList(page = page)
 
 }
